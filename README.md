@@ -5,47 +5,17 @@
 
 ruby2.3.0环境调试
 
-ruby2.3.0环境调试
 
 sdk的依赖包:
 gem install jruby-openssl -V
+
 gem install iniparse -V
+
 demo用到的依赖包：
+
 gem install sinatra -V
+
 gem install rubyzip -V
-
-目录结构
-
-upacp_sdk_ruby
-  │
-  ├com.unionpay.acp.sdk ┈┈┈┈┈┈┈┈┈ sdk，其中AcpService为对外接口，其他为内部使用
-  │  │
-  │  └acp_sdk.ini ┈┈┈┈┈┈┈┈┈ 配置文件，默认使用了测试环境证书方式签名的配置文件
-  │
-  ├demo
-  │  │
-  │  ├backRcvResponse.rb ┈┈┈┈┈┈┈┈┈ 后台通知演示
-  │  │
-  │  ├frontRcvResponse.rb ┈┈┈┈┈┈┈┈┈ 前台通知演示
-  │  │
-  │  ├batTrans.rb ┈┈┈┈┈┈┈┈┈ 批量交易演示
-  │  │
-  │  ├batTransQuery.rb ┈┈┈┈┈┈┈┈┈ 批量查询演示
-  │  │
-  │  ├fileDownload.rb ┈┈┈┈┈┈┈┈┈ 对账文件下载演示
-  │  │
-  │  ├multiCertDemo.rb ┈┈┈┈┈┈┈┈┈ 多证书签名演示
-  │  │
-  │  ├multiKeyDemo.rb ┈┈┈┈┈┈┈┈┈ 多密钥签名演示
-  │  │
-  │  ├backTradeDemo.rb ┈┈┈┈┈┈┈┈┈ 后台交易演示*
-  │  │
-  │  ├frontTradeDemo.rb ┈┈┈┈┈┈┈┈┈ 前台交易演示*
-  │  │
-  │  └frontTradeDemo2.rb ┈┈┈┈┈┈┈┈┈ 前台交易演示*
-  │
-  └start.rb ┈┈┈┈┈┈┈┈┈ demo的web服务启动
-
 
 demo说明：
 *   默认8080端口启动，启动后浏览器访问http://ip:8080/
